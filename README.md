@@ -12,14 +12,14 @@ Manage ECR public repositories.
 
 | Name | Version |
 |------|---------|
-| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 0.13 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 3.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 3.73.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 5.21.0 |
 
 ## Modules
 
@@ -36,6 +36,7 @@ No modules.
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | <a name="input_public_repositories"></a> [public\_repositories](#input\_public\_repositories) | Define the module's input below | `any` | `null` | no |
+| <a name="input_tags"></a> [tags](#input\_tags) | n/a | `map(string)` | `null` | no |
 
 ## Outputs
 
