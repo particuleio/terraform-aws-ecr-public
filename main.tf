@@ -12,4 +12,9 @@ resource "aws_ecrpublic_repository" "this" {
     operating_systems = lookup(each.value, "operating_systems", [])
     usage_text        = lookup(each.value, "usage_text", "")
   }
+
+  tags = merge(
+    var.tags,
+    lookup(each.value, "tags", {}),
+  )
 }
